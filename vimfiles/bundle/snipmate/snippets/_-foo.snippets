@@ -1,0 +1,95 @@
+snippet form
+	<form class="${1}" method="${2}" action="${3}">
+		${4}
+	</form>
+#
+snippet formfile
+	<form class="${1}" enctype="multipart/form-data" method="${2}" action="${3}">
+		${4}
+	</form>
+#
+snippet formgroup
+	<div class="form-group">
+		<label class="control-label" for="${1:name}">${2}</label>
+		<input class="form-control" id="$1" name="$1" type="text">
+	</div>
+	${3}
+#
+snippet formgroupselect
+	<div class="form-group">
+		<label class="control-label" for="${1:name}">${2}</label>
+		<select class="form-control" id="$1" name="$1">
+			<option value="">-</option>
+			<option value="${3}">${4}</option>
+		</select>
+	</div>
+	${3}
+#
+snippet formgrouptextarea
+	<div class="form-group">
+		<label class="control-label" for="${1:name}">${2}</label>
+		<textarea class="form-control" id="$1" name="$1"></textarea>
+	</div>
+	${3}
+#
+snippet selectuf
+	<select class="form-control" id="uf" name="uf">
+		<option value="">Selecione</option>
+		<option value="AC">Acre</option>
+		<option value="AL">Alagoas</option>
+		<option value="AP">Amapá</option>
+		<option value="AM">Amazonas</option>
+		<option value="BA">Bahia</option>
+		<option value="CE">Ceará</option>
+		<option value="DF">Distrito Federal</option>
+		<option value="ES">Espírito Santo</option>
+		<option value="GO">Goiás</option>
+		<option value="MA">Maranhão</option>
+		<option value="MT">Mato Grosso</option>
+		<option value="MS">Mato Grosso do Sul</option>
+		<option value="MG">Minas Gerais</option>
+		<option value="PA">Pará</option>
+		<option value="PB">Paraíba</option>
+		<option value="PR">Paraná</option>
+		<option value="PE">Pernambuco</option>
+		<option value="PI">Piauí</option>
+		<option value="RJ">Rio de Janeiro</option>
+		<option value="RN">Rio Grande do Norte</option>
+		<option value="RS">Rio Grande do Sul</option>
+		<option value="RO">Rondônia</option>
+		<option value="RR">Roraima</option>
+		<option value="SC">Santa Catarina</option>
+		<option value="SP">São Paulo</option>
+		<option value="SE">Sergipe</option>
+		<option value="TO">Tocantins</option>
+	</select>
+	${1}
+#
+
+snippet mq Min width
+	@media (min-width: ${1}px) {
+		${2}
+	}
+#
+snippet mq Max width
+	@media (max-width: ${1}px) {
+		${2}
+	}
+#
+snippet mq Min and max width
+	@media (min-width: ${1}px) and (max-width: ${2}px) {
+		${3}
+	}
+#
+
+
+
+snippet csssec
+	/* ==========================================================================
+	   ${1}
+	   ========================================================================== */
+#
+snippet csssubsec
+	/* ${1}
+	   ========================================================================== */
+#
